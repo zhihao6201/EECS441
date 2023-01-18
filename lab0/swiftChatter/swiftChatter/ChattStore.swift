@@ -14,7 +14,7 @@ final class ChattStore {
     private(set) var chatts = [Chatt]()
     private let nFields = Mirror(reflecting: Chatt()).children.count
 
-    private let serverUrl = "https://mada.eecs.umich.edu/"
+    private let serverUrl = "https://52.14.223.28/"
     func postChatt(_ chatt: Chatt) {
             let jsonObj = ["username": chatt.username,
                            "message": chatt.message]
